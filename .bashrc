@@ -42,3 +42,16 @@ PATH=~/.console-ninja/.bin:$PATH
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH=$PATH:/usr/bin
+export PATH="$PATH:/home/zero/.yarn/bin"
+
+#Android SDK
+export ANDROID_HOME=/opt/android-sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
+# Java 17 for Android builds
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
+# local bin
+export PATH="$HOME/.local/bin:$PATH"
+
